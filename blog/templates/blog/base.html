@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<html>
+        <head>
+<title>가축같은 생활</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+        </head>
+        <body>
+<div class="page-header">
+    <h1><a href="/">python django를 이용한 웹페이지 만들기</a></h1>
+</div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+        </body>
+    </html>
